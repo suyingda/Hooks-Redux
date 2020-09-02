@@ -6,7 +6,7 @@ module  actions  reducer
 ```
 
 ###use create initialIndex
-```json
+```js
 import React from 'react';
 import { SProvider, store } from 'hooks-redux';
 import CustomTemplate from './index';
@@ -24,7 +24,7 @@ export default STemplate;
 children template
 
 ###base
-```json
+```js
 import { SConsumer } from '@State';
 const mapStateToProps = (state) => ({
     ...state,
@@ -40,7 +40,7 @@ export default  SConsumer(
 ```
 ###form special @3+
 
-```json
+```js
 const FormCustomEdit = Form.create()(CustomEdit);
 export default  SConsumer(
     { mapStateToProps, mapDispatchToProps }, 
